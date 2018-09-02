@@ -6,13 +6,11 @@ export default class Hand extends Component {
     super();
 
     this.state = {
-      cards: [ // dummy data right now
-        { rank: 'King', suit: 'Spades'},
-        { rank: 'Ace', suit: 'Hearts'},
-        { rank: 'Three', suit: 'Clubs'},
-        { rank: 'Queen', suit: 'Diamonds'},
-        { rank: 'Ten', suit: 'Spades'},
-        { rank: 'Seven', suit: 'Diamonds'},
+      cards: [
+        { rank: 'K', suit: 'diamonds' },
+        { rank: 'K', suit: 'hearts' },
+        { rank: 'K', suit: 'spades' },
+        { rank: 'K', suit: 'clubs' },
       ]
     };
   }
@@ -20,7 +18,7 @@ export default class Hand extends Component {
   addCard(card){
     let newCards = [...this.state.cards];
     newCards.push(this.state.cards);
-    this.setState({  cards: newCards });
+    this.setState({ cards: newCards });
   }
 
   removeCard(index){

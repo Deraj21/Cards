@@ -11,9 +11,11 @@ export default class Player extends Component {
   }
   
   render() {
+    let { name } = this.props;
+
     return (
       <div className="player">
-        <h1>Player</h1>
+        <h1>Player: {name}</h1>
         <Hand />
       </div>
     );
