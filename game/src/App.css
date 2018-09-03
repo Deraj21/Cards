@@ -51,9 +51,8 @@ h1 {
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
-  align-content: space-around;
 }
 
 .card {

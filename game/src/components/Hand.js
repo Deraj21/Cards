@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Card from './Card';
+import Card from './Card/Card';
 
 export default class Hand extends Component {
   constructor(){
@@ -27,14 +27,12 @@ export default class Hand extends Component {
     this.setState({  cards: newCards });
     return card;
   }
-
   
   render() {
     let cards = this.state.cards.map((card, i) => Card(card.rank, card.suit, i) );
     
     return (
       <div className="hand">
-        <h1>Hand</h1>
         <div className="cards">
           { cards }
         </div>

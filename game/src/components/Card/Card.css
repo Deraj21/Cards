@@ -1,0 +1,60 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: stretch;
+  height: 175px;
+  width: 125px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #000000;
+  box-shadow: 2px 2px 15px 1px black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+.card-red {
+  background-color: rgb(233, 180, 182);
+}
+
+.card-black {
+  background-color: #90a7c0;
+}
+
+.rank-down {
+  transform: rotate(180deg);
+}
+
+.suit-logo {
+  height: 100px;
+  width: 100px;
+  background-size: contain;
+  margin: auto;
+}
+
+.diamonds-logo {
+  background-image: url('../cards/diamond.png');
+}
+
+.hearts-logo {
+  background-image: url('../cards/heart.png');
+}
+
+.spades-logo {
+  background-image: url('../cards/spade.png');
+}
+
+.clubs-logo {
+  background-image: url('../cards/club.png');
+}
+
+/* dragndrop */
+.hold {
+  transform: rotate(6deg);
+  border-style: dashed;
+}
+
+.hidden {
+  display: none;
+}
